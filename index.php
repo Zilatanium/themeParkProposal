@@ -1,99 +1,147 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Joseph's Proposal</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
-</head>
-<body>
-	<div class="wrapper">
-		<section>
-			<header> Joseph's Proposal </header>
-				<div class="content">
-				Date of this page's last revision: 10/14/2022.
-				</div>
-                <div class="content">
-				<?php
-                date_default_timezone_set("America/New_York");
-                echo "Today is " .date("m/d/y"), ", with the time of: ".date("h:i:sa"), "."
-                 ?>
-				</div>
-                <div class="content">
-				Proposed Theme: PC builds
-				</div>
-                <div class="content">
-				This theme will be focus on PC builds, specifically on the specifications of it.
-                There are many types of computer with very different hardware for different uses.
-                People have a certain budget they want to spend so they do not go overkill for 
-                their work-case uses. This theme will have a certain amount of PC builds that people 
-                can use for building their specs-for-them computer.
+    <head>
+        <meta charset="utf-8">
+        <title>Computer Builds</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-				</div>
-                <div class="content">
-				Team Member's Team Parks: 
-                <br/> Aaron - Link
-                <br/> Felix - Link
-                <br/> Sam - Link
-                <br/> Maxwell - Link
-				</div>
-                <div class="content">
-                    Example:
-                    <br/> <img src="pc_build.png">
-                </div>
-                <div class="content">
-                    <button class="button-9" id="toggle">YouTube Video</button>
-                    <iframe id="first" src="https://www.youtube.com/embed/QNakbNjdrjk" frameborder="0" allowfullscreen></iframe>
-                    <button class="button-9" id="toggle2" >Example Table</button>
-                    <div id="second">
-                        <table style="width:100%">
-                            <tr>
-                                <th>Budget</th>
-                                <th>CPU</th>
-                                <th>GPU</th>
-                                <th>Ram</th>
-                                <th>Storage</th>
-                            </tr>
-                            <tr>
-                                <th>1000</th>
-                                <th>Ryzen 5600x</th>
-                                <th>RTX 2070</th>
-                                <th>Trident 3600</th>
-                                <th>SSD</th>
-                            </tr>
-                            <tr>
-                                <th>1500</th>
-                                <th>Intel i9</th>
-                                <th>3070</th>
-                                <th>Trident 4500</th>
-                                <th>NVME M.2 SSD</th>
-                            </tr>
-                            </table> 
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/templatemo_style.css">
+        <link rel="stylesheet" href="css/templatemo_misc.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/testimonails-slider.css">
+
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+            <header>
+                <div id="main-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="logo">
+                                    <a href="#"><img src="images/building_icon_50.png" title="PC Builds"></a>
+                                </div>
+                            </div>
+                            <div class="col-md-16">
+                                <div class="main-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>                                       
+                                        <li><a href="about-us.html">Least Expensive</a></li>
+                                        <li><a href="about-us.html">Most Expensive</a></li>
+                                        <li><a href="about-us.html">About</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- <div class="col-md-3">
+                                <div class="search-box">  
+                                    <form name="search_form" method="get" class="search_form">
+                                        <input id="search" type="text" />
+                                        <input type="submit" id="search-button" />
+                                    </form>
+                                </div>
+                            </div> -->
+                        </div>
                     </div>
                 </div>
-		</section>
-	</div>
-    <script>
-        const targetDiv = document.getElementById("first");
-        const btn = document.getElementById("toggle");
-        targetDiv.style.display = "none";
-        btn.onclick = function () {
-        if (targetDiv.style.display !== "none") {
-            targetDiv.style.display = "none";
-        } else {
-            targetDiv.style.display = "block";
-        }
-        };
+            </header>
+            
 
-        const targetDiv2 = document.getElementById("second");
-        const btn2 = document.getElementById("toggle2");
-        targetDiv2.style.display = "none";
-        btn2.onclick = function () {
-        if (targetDiv2.style.display !== "none") {
-            targetDiv2.style.display = "none";
-        } else {
-            targetDiv2.style.display = "block";
-        }
-        };
-   </script>
-</body>
+            <div id="slider">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                        <div class="slider-caption">
+                            <h1>What build can you get with your Money?</h1>
+                            <p>Click on one of the item build below to see what build is best for you!
+                            <br><br></p>
+                            <a href="single-post.html">Find Build</a>
+                        </div>
+                      <img src="images/pcbuildforslider.jpg" alt="" />
+                    </li>
+                    <li>
+                        <img src="images/pcbuildforslider3.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="images/pcbuildforslider2.jpg" alt="" />
+                    </li>
+                  </ul>
+                </div>
+            </div>
+
+
+            <div id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-section">
+                                <h2>Strongest Computer for your Budget!</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <div class="icon">
+                                    <i class="fa fa-bell"></i>
+                                </div>
+                                <h4>$500 Build</h4>
+                                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <div class="icon">
+                                    <i class="fa fa-bell"></i>
+                                </div>
+                                <h4>$1000 Build</h4>
+                                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <div class="icon">
+                                    <i class="fa fa-bell"></i>
+                                </div>
+                                <h4>$1500 Build</h4>
+                                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <div class="icon">
+                                    <i class="fa fa-bell"></i>
+                                </div>
+                                <h4>$2000 Build</h4>
+                                <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "PC_500">
+                <div class= "container">
+                    <div class="col-md-12">
+                            <div class="heading-section">
+                                <h2>$500 Computer Build</h2>
+                            </div>
+                        </div>
+                    <div class="row"></div>
+
+                </div>
+            </div>
+
+
+
+    
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="js/vendor/jquery.gmap3.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
 </html>
